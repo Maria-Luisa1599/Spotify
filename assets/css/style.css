@@ -11,10 +11,11 @@ body{
         "nav nav nav nav" 1fr
         "menu main main aside" 265px
         "menu main main aside" 265px
-        "menu main main aside" 265px / 464px 1060px;
+        "menu main main aside" 265px / 464px 530px 530px minmax(374px,500px);
     /* gap: 10px; */
     background-color: black;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 4px 0px 0 10px;
 }
 
@@ -155,12 +156,15 @@ menu{
 main{
     grid-area: main;
     border-radius: 10px;
-    background-color: white;
+    background-color: brown;
 
 }
 
-aside{
+aside {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     background-color: purple;
     font-family: "Poppins", sans-serif;
@@ -218,9 +222,16 @@ aside .top-more-options .close-button{
 
 
 aside .album-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 96%;
-    margin-top: 21px;
-    /* margin-right: 10px; */
+    background-color: blue;
+}
+
+
+aside .album-image img{
+    max-width: 100%;
     border-radius:10px;
 }
 
@@ -281,7 +292,129 @@ aside .music-description .artist-name-description{
 }
 
 footer{
-    position: static;
-    height: 100%;
-    background-color: yellow;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    background-color: orange;
+    padding: 10px;
+    height: 95px;
+    width: 100%;
+    top: calc(100vh - 95px);
 }
+
+footer .playing-now {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+footer .playing-now img{
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
+footer .playing-now .player-music-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+footer .playing-now .player-name-music{
+    font-size: 15px;
+}
+
+footer .playing-now .player-name-author{
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+footer .player{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .player .player-controler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    margin-left: 200px;
+}
+
+footer .player .player-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /* width: 300px; */
+    margin-left: 200px;
+}
+
+footer .player .player-time span{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 8px;
+}
+
+footer .player .player-time input{
+    width: 650px;
+    height: 4px;
+}
+
+
+footer .player img{
+    width: 18px;
+}
+
+footer .player #pause-music{
+    width: 40px;
+}
+
+footer .player .player-time{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .left-player-icons{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 370px;
+}
+
+footer .left-player input{
+    width: 130px;
+    height: 4px;
+    margin-bottom: 3px;
+}
+
+footer .left-player img{
+    width: 18px;
+    margin-left: 13px;
+}
+
+footer .left-player #videoplayer-icon{
+    height: 20px;
+}
+
+footer .left-player #queue-icon{
+    width: 20px;
+    height: 30px;
+}
+
+footer .left-player #bombox-icon{
+    width: 20px;
+}
+
+footer .left-player #sound-icon{
+    width: 25px;
+    margin-left: 5px;
+}
+

@@ -77,11 +77,12 @@
             </span>
           </span>
         </div>
-        <img
-          class="album-image"
-          src="./assets/images/icon-aside/CHIHIRO.jpeg"
-          alt="Chihiro de Billie Eilish"
-        />
+        <div class="album-image">
+          <img
+            src="./assets/images/icon-aside/CHIHIRO.jpeg"
+            alt="Chihiro de Billie Eilish"
+          />
+        </div>
         <div class="music-description">
           <span class="artist-and-song-description">
             <span class="song-name-description">CHIHIRO</span>
@@ -144,16 +145,37 @@
     </aside>
     <footer>
       <div class="playing-now">
-        <img src="" alt="Imagem da música agora" />
-        <span>Nome da música</span>]
-        <span>nome autor</span>
+        <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem da música agora"/>
+        <div class="player-music-details">
+          <span class="player-name-music">CHIHIRO</span>
+          <span class="player-name-author">Billie Eilish</span>
+        </div>
       </div>
-      <div class="">
-        <img src="" alt="Música aleatória" />
-        <img src="" alt="Voltar música" />
-        <img src="" alt="Pausar/despausar música" />
-        <img src="" alt="Próxima música" />
-        <img src="" alt="Repetir música" />
+      <div class="player">
+        <div class="player-controler">
+          <img id="random-music" src="./assets/images/icon-player/aleatorio.png" alt="Música aleatória" />
+          <img id="previous-music" src="./assets/images/icon-player/voltar-botao.png" alt="Voltar música" />
+          <img id="pause-music" src="./assets/images/icon-player/botao-play.png" alt="Pausar/despausar música" />
+          <img id="next-music" src="./assets/images/icon-player/proximo-botao.png" alt="Próxima música" />
+          <img id="repeat-music" src="./assets/images/icon-player/repetir.png" alt="Repetir música" />
+        </div>
+        <div class="player-time">
+          <span>00:00</span>
+          <input type="range" min="0" max="100" step="5" value="50" id="range" />
+          <span>05:03</span>
+        </div>
+      </div>
+      <div class="left-player">
+        <div class="left-player-icons">
+          <img id="videoplayer-icon" src="./assets/images/icon-player/green-miniplayer.png" alt="Tela tocando agora">
+          <img id="mic-icon" src="./assets/images/icon-player/microfone.png" alt="Letra">
+          <img id="queue-icon" src="./assets/images/icon-player/fila.png" alt="Fila">
+          <img id="bombox-icon" src="./assets/images/icon-player/palestrante.png" alt="Conectar a um dispositivo">
+          <img id="sound-icon" src="./assets/images/icon-player/volume.png" alt="Volume">
+          <input type="range" min="0" max="100" step="5" value="50" id="range" />
+          <img id="miniplayer-icon" src="./assets/images/icon-player/fullscreen.png" alt="Miniplayer">
+          <img id="fullscreen-icon" src="./assets/images/icon-player/tela-cheia.png" alt="Tela cheia">
+        </div>
       </div>
     </footer>
   </body>

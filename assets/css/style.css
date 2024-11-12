@@ -409,14 +409,19 @@ main{
 
 .lyrics-main{
     white-space: pre;
-
+    margin-left: -55px;
 }
 
-.lyrics-main:first-of-type span{
+.lyrics-main span{
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
+}
+
+.lyrics-main span:first-of-type{
+    font-size: 20px;
+    margin-left: 8px;
 }
 
 .show-more{
@@ -454,7 +459,285 @@ main{
     display: none;
 }
 
+.about-artist-menu{
+    display: flex;
+    width: 100%;
+    padding: 7px;
+}
 
+.about-artist-menu:hover{
+    background-color: blue;
+    border-radius: 7px;
+}
+
+.about-artist-menu img{
+    border-radius: 100%;
+    width: 100px;
+}
+
+.details-about-artists-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    color: white;
+}
+
+
+.about-artist-menu .details-about-artists-menu span{
+    font-size: 17px;
+
+}
+.details-about-artists-menu span:first-of-type{
+    font-size: 15px;
+}
+
+.recommendation-menu{
+    font-family: "Poppins", sans-serif;
+    line-height: 20px;
+    margin-top: 50px;
+}
+
+.recommendation-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.recommendation-span span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.recommendation-span span:first-of-type{
+
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+
+.all-musics-recommendation{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.music-artist-menu{
+    display: flex;
+    margin-top: -10px;
+
+}
+
+.music-artist-menu img{
+    width: 50px;
+}
+
+.details-artists-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #888888;
+}
+
+.details-artists-menu span:first-of-type{
+    color: white;
+    font-size: 17px;
+}
+
+.details-numbers-artists-menu{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    color: #888888;
+}
+
+.details-numbers-artists-menu span:first-of-type{
+    margin-right: 260px;
+}
+
+
+.popular-track-menu{
+    font-family: "Poppins", sans-serif;
+    line-height: 25px;
+    margin-top: 50px;
+}
+
+.popular-track-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.popular-track-span span{
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+
+.popular-track-span span:first-of-type{
+    font-size: 15px;
+    font-weight: 500;
+    color: #888888;
+
+}
+
+.music-artist-menu-number{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 35px;
+    font-weight: 500;
+    font-size: 23px;
+    color: white;
+}
+
+
+.details-numbers-artists-menu-tracks{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #888888;
+    margin-left: 350px;
+}
+
+.details-numbers-artists-menu-tracks span:first-of-type{
+    margin-right: 260px;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 18px 0;
+}
+.popular-title span:first-of-type{
+    display: flex;
+    align-items: end;
+    font-size: 21px;
+}
+
+.popular-title span{
+    display: flex;
+    align-items: center;
+
+}
+
+.popular-information-img img{
+    width: 180px;
+}
+
+.popular-information{
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-information span{
+    width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888888;
+    
+}
+.popular-information span:first-of-type{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.fan-likes-too img{
+    width: 200px;
+    border-radius: 400px;
+}
+
+
+
+
+
+.all-musics-album .music-artist-menu-all-songs{
+    display: flex;
+    background-color: #2A2A2A;
+    margin-top: 10px;
+    border-radius: 7px 7px 0 0;
+}
+
+.all-musics-album .music-artist-menu-all-songs img{
+    width: 100px;
+    border-radius: 7px 7px 0 0;
+}
+
+.all-musics-album .music-artist-menu-all-songs .details-artists-menu span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+
+}
+.all-musics-album .music-artist-menu-all-songs .details-artists-menu span:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+
+
+.album-musics{
+    margin-top: 10px;
+}
+
+.album-musics .details-artists-menu span{
+    width: 100px;
+
+}
+
+.album-musics .details-numbers-artists-menu-tracks span{
+    margin-left: 390px;
+}
+
+
+
+.footer-main-information{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+
+.footer-main-information span{
+    white-space: pre;
+}
 
 
 /* details{

@@ -531,6 +531,7 @@ main{
 .music-artist-menu{
     display: flex;
     margin-top: -10px;
+    margin-bottom: 20px;
 
 }
 
@@ -598,9 +599,10 @@ main{
 .music-artist-menu-number{
     display: flex;
     align-items: center;
+    min-width: 20px;
     margin: 0 20px 0 35px;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 19px;
     color: white;
 }
 
@@ -611,7 +613,7 @@ main{
     display: flex;
     align-items: center;
     color: #888888;
-    margin-left: 350px;
+    margin-left: 275px;
 }
 
 .details-numbers-artists-menu-tracks span:first-of-type{
@@ -674,9 +676,6 @@ main{
 }
 
 
-
-
-
 .all-musics-album .music-artist-menu-all-songs{
     display: flex;
     background-color: #2A2A2A;
@@ -685,7 +684,7 @@ main{
 }
 
 .all-musics-album .music-artist-menu-all-songs img{
-    width: 100px;
+    width: 90px;
     border-radius: 7px 7px 0 0;
 }
 
@@ -712,21 +711,18 @@ main{
 
 
 
-
 .album-musics{
     margin-top: 10px;
 }
 
 .album-musics .details-artists-menu span{
-    width: 100px;
-
+    width: 165px;
+    
 }
 
 .album-musics .details-numbers-artists-menu-tracks span{
     margin-left: 390px;
 }
-
-
 
 .footer-main-information{
     font-family: "Poppins", sans-serif;
@@ -734,9 +730,71 @@ main{
     color: white;
 }
 
+.footer-main-all-information{
+    display: flex;
+} 
 
 .footer-main-information span{
     white-space: pre;
+}
+
+
+.footer-main-about{
+    display: flex;
+    margin-top: 50px;
+}
+.footer-main-about-topic{
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-main-about-topic span{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-main-about-topic :first-child{
+    margin-top: 10px;
+}
+
+
+.footer-main-about-details{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-main-about-details span{
+    color: #888888;
+}
+
+.footer-main-social-media{
+    margin-top: 50px;
+}
+.footer-main-social-media img{
+    margin: 0 5px;
+    width: 35px;
+}
+
+.politics-and-terms{
+    border-top: black 1px solid;
+}
+
+.politics-and-terms-span{
+    margin: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.politics-and-terms-span span{
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: #888888;
 }
 
 

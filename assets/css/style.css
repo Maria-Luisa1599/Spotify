@@ -543,6 +543,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 230px;
     font-family: "Poppins", sans-serif;
     margin-left: 10px;
     font-weight: 400;
@@ -560,7 +561,7 @@ main{
     font-size: 15px;
     display: flex;
     align-items: center;
-    margin-left: 400px;
+    margin-left: 350px;
     color: #888888;
 }
 
@@ -613,7 +614,7 @@ main{
     display: flex;
     align-items: center;
     color: #888888;
-    margin-left: 275px;
+    margin-left: 256px;
 }
 
 .details-numbers-artists-menu-tracks span:first-of-type{
@@ -648,6 +649,10 @@ main{
 
 }
 
+.popular-img{
+    display: flex;
+}
+
 .popular-information-img img{
     width: 180px;
 }
@@ -665,13 +670,19 @@ main{
     
 }
 .popular-information span:first-of-type{
+    width: 169px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
+.fan-likes-too-align{
+    display: flex;
+}
+
 .fan-likes-too img{
-    width: 200px;
+    width: 190px;
+    margin-right: 10px;
     border-radius: 400px;
 }
 
@@ -742,6 +753,7 @@ main{
 .footer-main-about{
     display: flex;
     margin-top: 50px;
+    margin-left: 10px;
 }
 .footer-main-about-topic{
     margin-right: 50px;

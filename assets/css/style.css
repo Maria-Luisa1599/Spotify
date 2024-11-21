@@ -530,7 +530,6 @@ main{
 
 .music-artist-menu{
     display: flex;
-    margin-top: -10px;
     margin-bottom: 20px;
 
 }
@@ -546,6 +545,7 @@ main{
     width: 230px;
     font-family: "Poppins", sans-serif;
     margin-left: 10px;
+    line-height: 1;
     font-weight: 400;
     font-size: 15px;
     color: #888888;
@@ -854,8 +854,8 @@ aside {
 }
 
 aside .all-of-aside{
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -864,15 +864,19 @@ aside .all-of-aside{
 }
 
 aside:hover{
-    overflow-y: scroll;
-    overflow-x: hidden;
     position: relative;
 }
 
 aside .top-of-aside{
     display: flex;
-    justify-content: space-between;
-    margin-top: 23px;
+    position: sticky;
+    top: 0px;
+    background-color: purple;
+    width: 350px;
+    min-height: 30px;
+    justify-content: space-between; 
+    padding-top: 23px;
+    padding-bottom: 50px;
 }
 
 aside .top-of-aside .album-name{
@@ -895,6 +899,7 @@ aside .top-of-aside .align-icons-options{
 }
 
 aside .top-more-options span{
+    margin-right: 10px;
     font-size: 17.5px;
     letter-spacing: 2.5px;
     margin-bottom: 6px;
@@ -911,13 +916,13 @@ aside .album-image{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96%;
-    background-color: blue;
+    width: 97%;
 }
 
 
 aside .album-image img{
     max-width: 100%;
+    margin-bottom: 60px;
     border-radius:10px;
 }
 
@@ -950,32 +955,60 @@ aside .music-description .artist-name-description{
     opacity: 0.9;
 }
 
-.aside .all-of-aside .videclip{
-
-}
-
-.aside .all-of-aside .videclip img{
-}
-
-.carousel{
+.videoclip{
+    height: 500px;
     background-color: blue;
-    width: 100px;
-    height: 220px;
 }
 
-.carousel img{
-    width: 200px;
-}
-
-.image-inside-and-carousel{
-    display: flex;
-    width: 335px;
-    height: 200px;
-    margin-top: 20px;
+/* Estilos do Carrossel */
+.carrossel {
+    width: 70%; /* Largura do carrossel */
+    margin: auto; /* Centraliza o carrossel na página */
+    position: relative; /* Para posicionar os botões dentro do carrossel */
+    overflow: hidden; /* Esconde as imagens que saem da área visível */
+  }
+  
+  .carrossel-container {
+    display: flex; /* Exibe os itens em linha */
+    align-items: center;
+    transition: transform 0.5s ease; /* Suaviza a transição de mudança de imagem */
+  }
+  
+  .carrossel-item {
+    min-width: 100%; /* Cada item ocupa 100% da largura do carrossel */
+  }
+  
+  .carrossel-item img {
+    width: 100%; /* A imagem ocupa toda a largura do item */
+    height: auto;
+  }
+  
+  /* Estilos dos Botões */
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
     padding: 10px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carrossel button.prev {
+    left: 10px;
+  }
+  
+  .carrossel button.next {
+    right: 10px;
+  }
+  
+  .carrossel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
 
 footer{
     display: flex;

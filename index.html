@@ -79,15 +79,24 @@
         <!-- fim topo menu -->
         <!-- ============================================================= -->         
         <!-- carousel -->
-         <div>
-          ============================================
-          <br>
-          ============================================
-          <br>
-          ============================================
-          <br>
-          ============================================
-          <br>
+        <div class="items-carrosel">
+          <div class="carrossel">
+            <div class="carrossel-container carrossel-container-player">
+              <div class="carrossel-item carrossel-item-player">
+                <span>Playlist</span>
+                <span>Artistas</span>
+                <span>Álbuns</span>
+              </div>
+              <div class="carrossel-item carrossel-item-player">
+                <span style="margin-left: 150px;">Podcast e programas</span>
+              </div>
+
+              <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <button class="prev" onclick="mudarImagem1(-1)">❮</button>
+            <button class="next" onclick="mudarImagem1(1)">❯</button>
+          </div>
+        </div>
         </div>
         <!-- fim carousel -->
         <!-- ============================================================= -->
@@ -854,19 +863,19 @@ Letra disponibilizada por Musixmatch
         </div>
         <div class="videoclip">
           <div class="carrossel">
-            <div class="carrossel-container">
-              <div class="carrossel-item">
+            <div class="carrossel-container carrossel-container-videoclip">
+              <div class="carrossel-item carrossel-item-videoclip">
                 <img src="./assets/images/icon-aside/videoclip-img.jpeg" alt="Imagem 1">
               </div>
-              <div class="carrossel-item">
+              <div class="carrossel-item carrossel-item-videoclip">
                 <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem 2">
               </div>
-              <div class="carrossel-item">
+              <div class="carrossel-item carrossel-item-videoclip">
                 <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem 3">
               </div>
               <!-- Adicione mais imagens conforme necessário -->
             </div>
-            <button class="prev" onclick="mudarImagem(-1)">❮</button>
+            <button class="prev" onclick="mudarImagem(-1 )">❮</button>
             <button class="next" onclick="mudarImagem(1)">❯</button>
           </div>
         </div>

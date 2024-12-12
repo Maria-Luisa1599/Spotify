@@ -88,7 +88,7 @@
                 <span>Álbuns</span>
               </div>
               <div class="carrossel-item carrossel-item-player">
-                <span style="margin-left: 150px;">Podcast e programas</span>
+                <span style="margin-left: 130px;">Podcast e programas</span>
               </div>
 
               <!-- Adicione mais imagens conforme necessário -->
@@ -862,29 +862,57 @@ Letra disponibilizada por Musixmatch
           />
         </div>
         <div class="videoclip">
+          <span id="related-videoclips">Videoclipes relacionados</span>
           <div class="carrossel">
             <div class="carrossel-container carrossel-container-videoclip">
-              <div class="carrossel-item carrossel-item-videoclip">
-                <img src="./assets/images/icon-aside/videoclip-img.jpeg" alt="Imagem 1">
+              <div class="carrossel-container-all">
+                <div class="carrossel-item carrossel-item-videoclip">
+                  <img src="./assets/images/icon-aside/videoclip-img.jpeg" alt="Imagem 1">
+                </div>
+                <div class="carrossel-container-legenda">
+                  <span>BIRDS OF A FEATHER</span>
+                  <span>BILLIE EILISH</span>
+                </div>
               </div>
-              <div class="carrossel-item carrossel-item-videoclip">
-                <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem 2">
+
+              <div class="carrossel-container-all">
+                <div class="carrossel-item carrossel-item-videoclip">
+                  <img src="./assets/images/icon-aside/videoclip-img.jpeg" alt="Imagem 2">
+                </div>
+                <div class="carrossel-container-legenda"> 
+                  <span>WATCH</span>
+                  <span>BILLIE EILISH</span>
+                </div>
               </div>
-              <div class="carrossel-item carrossel-item-videoclip">
-                <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem 3">
+
+              <div class="carrossel-container-all">
+                <div class="carrossel-item carrossel-item-videoclip">
+                  <img src="./assets/images/icon-aside/videoclip-img.jpeg" alt="Imagem 3">
+                </div>
+                <div class="carrossel-container-legenda">
+                  <span>OCEAN EYES</span>
+                  <span>BILLIE EILISH</span>
+                </div>
               </div>
               <!-- Adicione mais imagens conforme necessário -->
             </div>
-            <button class="prev" onclick="mudarImagem(-1 )">❮</button>
-            <button class="next" onclick="mudarImagem(1)">❯</button>
+            <button class="prev leg-button" onclick="mudarImagem(-1)">❮</button>
+            <button class="next leg-button" style="right: 2px;" onclick="mudarImagem(1)">❯</button>
           </div>
         </div>
 
-        <div class="about-the-artist">
-          <img src="" alt="Imagem do artista" />
-          <span>Nome do artista</span>
-          <span>N° de ouvintes</span>
-          <span>Seguir</span>
+        <div class="all-about-the-artist">
+          <div class="image-of-the-artist">
+            <span>Sobre o artista</span>
+            <img src="./assets/images/icon-aside/CHIHIRO.jpeg" alt="Imagem do artista" />
+          </div>
+          <div class="artist-informations">
+            <span>Billie Eilish</span>
+            <span>105.022.520</span>
+            <span>ouvintes mensais</span>
+            <span class="unfollow">Deixar de seguir</span>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus velit natus facere ex iste eveniet, possimus quas odio modi nemo saepe dolore suscipit ipsum sed illum accusantium blanditiis culpa porro?</span>
+          </div>
         </div>
 
         <div class="credits">

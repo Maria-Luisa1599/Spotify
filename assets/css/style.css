@@ -851,8 +851,8 @@ aside {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: white;
-    margin-left: 10px;
-    margin-right: 8px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 aside .all-of-aside{
@@ -872,6 +872,7 @@ aside:hover{
 aside .top-of-aside{
     display: flex;
     position: sticky;
+    z-index: 11;
     top: 0px;
     background-color: purple;
     width: 344px;
@@ -960,7 +961,7 @@ aside .music-description .artist-name-description{
 
 .videoclip {
     min-height: 280px;
-    width: 336px;
+    width: 344px;
     margin-left: -2px;
     padding-top: 19px;
     background-color: blue;
@@ -1100,26 +1101,32 @@ aside .music-description .artist-name-description{
 
 .all-about-the-artist{
     background-color: blue;
-    width: 333px;
+    width: 344px;
     min-height: 407px;
     margin-top: 18px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .image-of-the-artist{
     margin-top: -25px;
 }
-  
+
 .image-of-the-artist span{
     position: relative;
-    top: 45px;
+    top: 25px;
+    left: -20px;
     padding: 25px;
     cursor: pointer;
     font-size: 16px;
 }
 
 .image-of-the-artist img{
-    width: 333px;
+    margin: -15px;
+}  
+
+.image-of-the-artist img{
+    width: 344px;
     height: 228px;
     border-radius: 10px 10px 0 0;
 }
@@ -1127,14 +1134,69 @@ aside .music-description .artist-name-description{
 .artist-informations{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
+
 
 .unfollow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 175px;
-    top: -32px;
+    font-size: 14.5px;
+    left: 156px;
+    top: -42px;
+    border: 1px white solid;
+    border-radius: 100px;
+    width: 160px;
+    height: 36px;
+    
+}
+
+.artist-informations-description{
+    font-size: 12px;
 
 }
+
+
+
+
+
+.credits{
+    min-height: 265px;
+
+}
+
+.top-of-credits{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+}
+
+.top-of-credits span:first-of-type{
+    font-size: 16px;  
+    font-weight: 600;
+    margin-left: -23px;
+}
+
+.top-of-credits span{
+    font-size: 14px;
+    top: 0px;
+    left: 0px;
+}
+
+.artist-informations-function{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.unfollow-credits{
+    top: -200px;
+}
+
 
 footer{
     display: flex;

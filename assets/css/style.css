@@ -130,8 +130,8 @@ nav .icon-bell img{
 }
 
 nav .icon-perfil{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 57px;
+    max-height: 57px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -875,7 +875,7 @@ aside .top-of-aside{
     z-index: 11;
     top: 0px;
     background-color: purple;
-    width: 344px;
+    width: 354px;
     min-height: 30px;
     justify-content: space-between; 
     padding-top: 23px;
@@ -895,6 +895,7 @@ aside .top-more-options{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: -10px;
 }
 
 aside .top-of-aside .align-icons-options{
@@ -1122,12 +1123,9 @@ aside .music-description .artist-name-description{
 }
 
 .image-of-the-artist img{
-    margin: -15px;
-}  
-
-.image-of-the-artist img{
     width: 344px;
     height: 228px;
+    margin: -15px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -1195,6 +1193,85 @@ aside .music-description .artist-name-description{
 
 .unfollow-credits{
     top: -200px;
+}
+
+
+.all-of-turne{
+    min-height: 250px;
+}
+
+.top-of-turne{
+    margin-bottom: 25px;
+}
+
+.turne-informations{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.show-all{
+    position: relative;
+    left: 211px;
+    top: -25px;
+    font-size: 14px;
+}
+
+.show-all span{
+    font-size: 14px;
+}
+
+.date-turne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 65px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.date-turne #date-month{
+    margin-top: 8px;
+    font-size: 13px;
+}
+.date-turne #date-number{
+    margin-top: -8px;
+    font-size: 26px;
+}
+
+.turne{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 13px;
+    margin-top: -5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.turne span:first-of-type{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.next-music{
+    min-height: 150px;
+    margin-bottom: 30px;
+}
+
+.open-queue{
+    position: relative;
+    left: 230px;
+    top: -25px;
+}
+.open-queue span{
+    font-size: 14px;
+}
+
+.next-music-img img{
+    width: 65px;
 }
 
 

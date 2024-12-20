@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 4px 0px 0 10px;
+    cursor: default;
 }
 
 nav{
@@ -51,7 +52,8 @@ nav .icon-home{
     margin-right: 10px
 }
 nav .icon-home img{
-    width: 24px;
+    width: 35px;
+    margin: -5px -1px 0 0;
     opacity: 0.6;
 }
 
@@ -231,7 +233,7 @@ menu .artist-menu{
     display: flex;
     align-items: center;
     margin-top: 23px;
-    margin-bottom: 24px;
+    margin-bottom: -8px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #b3b3b3;
@@ -256,20 +258,62 @@ menu .artist-menu .details-artists-menu span:first-of-type{
 main{
     grid-area: main;
     /* display: grid;
-        grid-template:
-    "top-main" 343px
-    "lyrics-main" 265px
-    "recommendations-main" 265px
-    "albuns-main" 265px
-    "songs-main" 265px
-    "footer-main" 265px; */
+    grid-template:
+        "header-main" 370px
+        "content-main" 379px / 100%; */
     border-radius: 10px;
+    /* background: linear-gradient(180deg, rgba(13,36,66,1) 0%, rgba(11,33,62,1) 6%, rgba(11,30,55,1) 11%, rgba(8,26,51,1) 15%, rgba(8,26,51,1) 21%, rgba(7,20,38,1) 25%, rgba(8,20,38,1) 30%, rgba(5,17,33,1) 35%, rgba(255,0,0,1) 91%);    background-color: brown;  */
+
     background-color: brown;
-    /* background-color: #111214; */
     padding: 23px;
     overflow-x: hidden;
-
+    overflow-y: scroll;
 }
+
+
+
+::-webkit-scrollbar-button{background-color:none !important;width:15px;height:0px;}
+
+main::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* Define the thumb style */
+  main::-webkit-scrollbar-thumb {
+    background-color:#898989;
+}
+  
+  /* Style the beginning section of the scrollbar track */
+  /* aside .all-of-aside::-webkit-scrollbar-track-piece:vertical:start {
+    background-color: white;
+  } */
+  
+  /* Style the end section of the scrollbar track */
+  main::-webkit-scrollbar-track-piece:vertical:end {
+    background-color: transparent;
+  }
+  
+  /* Define the button style */
+  main::-webkit-scrollbar-button:vertical {
+   background-color:rgb(0, 0, 0);
+   background-repeat: repeat;   
+   background-size: 100%;
+   background-position: -100px;
+  }
+  
+  main::-webkit-scrollbar-button:vertical:decrement {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z'%3E%3C/path%3E%3C/svg%3E");   
+  }
+  
+  main::-webkit-scrollbar-button:vertical:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E"); 
+  }
+  
+  /* Define the button style when being hovered over */
+  aside::-webkit-scrollbar-button:hover {
+    background-color: #999999;
+  }
 
 .background-of-top-of-main{
     position: relative;
@@ -431,9 +475,12 @@ main{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 15.5px;
+
+    width: 120px;
+    cursor: pointer;
 }
 
-.show-more:is(.show-more:active, .show-less:not(:active),.lyrics-second-part:not(:active)){
+/* .show-more:is(.show-more:active, .show-less:not(:active),.lyrics-second-part:not(:active)){
     display: none;
 
 }
@@ -441,7 +488,7 @@ main{
 .lyrics-second-part:is(.show-more:active, .show-less:not(:active),.lyrics-second-part:not(:active)){
     display: block;
 
-}
+} */
 
 /* .lyrics-second-part:is(.show-more:active, .show-less:not(:active)){
     display: block;
@@ -465,6 +512,7 @@ main{
     display: flex;
     width: 100%;
     padding: 7px;
+    cursor: pointer;
 }
 
 .about-artist-menu:hover{
@@ -856,14 +904,58 @@ aside {
 }
 
 aside .all-of-aside{
-    overflow-y: scroll;
-    overflow-x: hidden;
+
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar-button{background-color:none !important;width:15px;height:0px;}
+
+aside .all-of-aside::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* Define the thumb style */
+  aside .all-of-aside::-webkit-scrollbar-thumb {
+    background-color:#898989;
+}
+  
+  /* Style the beginning section of the scrollbar track */
+  /* aside .all-of-aside::-webkit-scrollbar-track-piece:vertical:start {
+    background-color: white;
+  } */
+  
+  /* Style the end section of the scrollbar track */
+  aside .all-of-aside::-webkit-scrollbar-track-piece:vertical:end {
+    background-color: transparent;
+  }
+  
+  /* Define the button style */
+  aside .all-of-aside::-webkit-scrollbar-button:vertical {
+   background-color:rgb(0, 0, 0);
+   background-repeat: repeat;   
+   background-size: 100%;
+   background-position: -100px;
+  }
+  
+  aside .all-of-aside::-webkit-scrollbar-button:vertical:decrement {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z'%3E%3C/path%3E%3C/svg%3E");   
+  }
+  
+  aside .all-of-aside::-webkit-scrollbar-button:vertical:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E"); 
+  }
+  
+  /* Define the button style when being hovered over */
+  aside .all-of-aside::-webkit-scrollbar-button:hover {
+    background-color: #999999;
+  }
+
 
 aside:hover{
     position: relative;
@@ -879,7 +971,7 @@ aside .top-of-aside{
     min-height: 30px;
     justify-content: space-between; 
     padding-top: 23px;
-    padding-bottom: 50px;
+    padding-bottom: 18px;
 }
 
 aside .top-of-aside .album-name{
@@ -953,7 +1045,7 @@ aside .music-description .song-name-description{
 aside .music-description .artist-and-song-description{
     display:flex;
     flex-direction: column;
-}
+}http://www.w3.org/2000/svg
 
 aside .music-description .artist-name-description{
     color: #ededed;
@@ -1372,7 +1464,7 @@ footer .player .player-time input{
 
 
 footer .player img{
-    width: 18px;
+    width: 19px;
 }
 
 footer .player #pause-music{
@@ -1398,7 +1490,7 @@ footer .left-player input{
 }
 
 footer .left-player img{
-    width: 18px;
+    width: 20px;
     margin-left: 13px;
 }
 
@@ -1408,7 +1500,6 @@ footer .left-player #videoplayer-icon{
 
 footer .left-player #queue-icon{
     width: 20px;
-    height: 30px;
 }
 
 footer .left-player #bombox-icon{
@@ -1416,7 +1507,8 @@ footer .left-player #bombox-icon{
 }
 
 footer .left-player #sound-icon{
-    width: 25px;
+    width: 20px;
     margin-left: 5px;
+    margin-right: 5px;
 }
 

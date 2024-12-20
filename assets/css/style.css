@@ -4,14 +4,39 @@
     box-sizing: border-box;
     border: 0;
 }
-  
+  /*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 10px;
+      -webkit-appearance: none;
+      background-color:rgb(98, 98, 98);
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      color:rgb(255, 255, 255);
+      cursor: pointer;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 80%;
+      -webkit-appearance: none;
+      cursor: ew-resize;
+      background:transparent;
+      cursor: pointer;
+      box-shadow: -80px 0 0 80px white;
+    }
+
+}
+
 body{
     display: grid;
     grid-template:
         "nav nav nav nav" 1fr
         "menu main main aside" 265px
         "menu main main aside" 265px
-        "menu main main aside" 265px / 464px 530px 530px minmax(374px,500px);
+        "menu main main aside" 214px / 464px 530px 530px minmax(374px,500px);
     /* gap: 10px; */
     background-color: black;
     overflow-x: hidden;
@@ -150,8 +175,8 @@ nav .icon-perfil img{
 
 menu{
     grid-area: menu;
-    background-color: green;
-    border-radius: 10px;
+    background-color: #121212;
+    border-radius: 6px;
     margin-right: 10px;
     padding: 25px;
 }
@@ -233,6 +258,7 @@ menu .artist-menu{
     display: flex;
     align-items: center;
     margin-top: 23px;
+    margin-left: -12px;
     margin-bottom: -8px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -261,21 +287,19 @@ main{
     grid-template:
         "header-main" 370px
         "content-main" 379px / 100%; */
-    border-radius: 10px;
+    border-radius: 6px;
     /* background: linear-gradient(180deg, rgba(13,36,66,1) 0%, rgba(11,33,62,1) 6%, rgba(11,30,55,1) 11%, rgba(8,26,51,1) 15%, rgba(8,26,51,1) 21%, rgba(7,20,38,1) 25%, rgba(8,20,38,1) 30%, rgba(5,17,33,1) 35%, rgba(255,0,0,1) 91%);    background-color: brown;  */
-
-    background-color: brown;
+    margin-right: 10px;
+    background-color: #121212;
     padding: 23px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-
-
 ::-webkit-scrollbar-button{background-color:none !important;width:15px;height:0px;}
 
 main::-webkit-scrollbar {
-    width: 15px;
+    width: 13px;
     height: 15px;
   }
   
@@ -352,8 +376,8 @@ main::-webkit-scrollbar {
 .top-of-main img{
     width: 250px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
-    box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
+    /* -webkit-box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
+    box-shadow: 0 4px 19px rgba(0, 0, 0, .5); */
 }
 
 .top-of-main .inside-top-of-main{
@@ -419,7 +443,7 @@ main::-webkit-scrollbar {
     left: -23px;
     width: 1045px;
     height: 100px;
-    background-image: linear-gradient(#051121,brown);
+    background-image: linear-gradient(#051121,#121212);
 }
 
 .icons-play-music{
@@ -515,9 +539,10 @@ main::-webkit-scrollbar {
     cursor: pointer;
 }
 
-.about-artist-menu:hover{
-    background-color: blue;
+.hover:hover{
+    background-color: #2A2A2A;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .about-artist-menu img{
@@ -580,12 +605,15 @@ main::-webkit-scrollbar {
 
 .music-artist-menu{
     display: flex;
-    margin-bottom: 20px;
-
+    /* align-items: center; */
+    margin-bottom: 6px;
+    height: 53px;
+    padding: 2px;
 }
 
 .music-artist-menu img{
     width: 50px;
+    height: 50px;
 }
 
 .details-artists-menu{
@@ -623,7 +651,7 @@ main::-webkit-scrollbar {
 .popular-track-menu{
     font-family: "Poppins", sans-serif;
     line-height: 25px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .popular-track-span{
@@ -651,7 +679,7 @@ main::-webkit-scrollbar {
     display: flex;
     align-items: center;
     min-width: 20px;
-    margin: 0 20px 0 35px;
+    margin: 0px 15px 0 10px;
     font-weight: 500;
     font-size: 19px;
     color: white;
@@ -685,7 +713,7 @@ main::-webkit-scrollbar {
 .popular-title{
     display: flex;
     justify-content: space-between;
-    margin: 80px 0 18px 0;
+    margin: 35px 0 18px 0;
 }
 .popular-title span:first-of-type{
     display: flex;
@@ -703,6 +731,16 @@ main::-webkit-scrollbar {
     display: flex;
 }
 
+.popular-information-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: -5px;
+    padding-top: 16px;
+    width: 205px;
+    /* background: aliceblue; */
+}
 .popular-information-img img{
     width: 180px;
 }
@@ -728,20 +766,37 @@ main::-webkit-scrollbar {
 
 .fan-likes-too-align{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fan-likes-too{
+
 }
 
 .fan-likes-too img{
     width: 190px;
-    margin-right: 10px;
+    /* margin-right: 0px; */
+    margin-left:4px;
+    padding-top: 5px;
+    padding: 6px;
     border-radius: 400px;
+
 }
 
+.fan-likes-too span{
+    padding-left: 10px;
+}
 
 .all-musics-album .music-artist-menu-all-songs{
     display: flex;
     background-color: #2A2A2A;
-    margin-top: 10px;
-    border-radius: 7px 7px 0 0;
+    margin-top: 40px;
+    border-radius: 8px 8px 0 0;
+}
+
+.all-musics-album .music-artist-menu-all-songs:hover {
+    background-color: #5A5A5A;
 }
 
 .all-musics-album .music-artist-menu-all-songs img{
@@ -783,6 +838,12 @@ main::-webkit-scrollbar {
 
 .album-musics .details-numbers-artists-menu-tracks span{
     margin-left: 390px;
+}
+
+.footer-main-all-information .footer-hover:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 .footer-main-information{
@@ -842,7 +903,7 @@ main::-webkit-scrollbar {
 }
 
 .politics-and-terms{
-    border-top: black 1px solid;
+    border-top: #2c2c2c 1px solid;
 }
 
 .politics-and-terms-span{
@@ -894,8 +955,8 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    background-color: purple;
+    border-radius: 6px;
+    background-color: #121212;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: white;
@@ -916,7 +977,7 @@ aside .all-of-aside{
 ::-webkit-scrollbar-button{background-color:none !important;width:15px;height:0px;}
 
 aside .all-of-aside::-webkit-scrollbar {
-    width: 15px;
+    width: 13px;
     height: 15px;
   }
   
@@ -966,7 +1027,7 @@ aside .top-of-aside{
     position: sticky;
     z-index: 11;
     top: 0px;
-    background-color: purple;
+    background-color: #121212;
     width: 354px;
     min-height: 30px;
     justify-content: space-between; 
@@ -1057,7 +1118,7 @@ aside .music-description .artist-name-description{
     width: 344px;
     margin-left: -2px;
     padding-top: 19px;
-    background-color: blue;
+    background-color: #1F1F1F;
     border-radius: 10px;
 }
 
@@ -1120,7 +1181,7 @@ aside .music-description .artist-name-description{
         font-weight: 500;
         font-size: 15px;
         color: white;
-        background-color: blue;
+        background-color: #333333;
         border-radius: 90px;
 
     }
@@ -1193,7 +1254,7 @@ aside .music-description .artist-name-description{
   }
 
 .all-about-the-artist{
-    background-color: blue;
+    background-color: #1F1F1F;
     width: 344px;
     min-height: 407px;
     margin-top: 18px;
@@ -1317,7 +1378,7 @@ aside .music-description .artist-name-description{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #121212;
     width: 65px;
     height: 60px;
     border-radius: 3px;
@@ -1371,7 +1432,7 @@ footer{
     display: flex;
     justify-content:space-between;
     position: absolute;
-    background-color: orange;
+    background-color: #000000;
     padding: 10px;
     height: 95px;
     width: 100%;

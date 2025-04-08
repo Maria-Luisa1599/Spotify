@@ -37,7 +37,6 @@ body{
         "menu main main aside" 265px
         "menu main main aside" 265px
         "menu main main aside" 214px / 464px 530px 530px minmax(374px,500px);
-    /* gap: 10px; */
     background-color: black;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -897,6 +896,7 @@ main::-webkit-scrollbar {
 }
 
 .footer-main-social-media{
+    text-decoration: none;
     margin-top: 50px;
 }
 .footer-main-social-media img{
